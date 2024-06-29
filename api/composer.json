@@ -1,0 +1,16 @@
+{
+    "name": "purity/api",
+    "description": "API",
+    "type": "project",
+    "license": "Copyright",
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "mercadopago/dx-php": "2.5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "API\\": "src/"
+        }
+    }
+}

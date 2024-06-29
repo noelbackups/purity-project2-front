@@ -1,0 +1,1 @@
+export const myConfig = { apiUrl: 'http://localhost/api', apiKey: 'On10WDc5qc9a1jLYj6m0BNvXGiy0S5beon4RZpERNJXj' };

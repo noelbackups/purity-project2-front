@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteRule ^([0-9A-Za-z_\.-\@]+)/([0-9A-Za-z_\.-\@]+)/$    index.php?Modulo=$1&Acao=$2
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.*)$ index.html?$1 [L,QSA]
+
+<IfModule mod_speling.c>
+    CheckSpelling off
+</IfModule>
+
+RewriteRule ^api\/([0-9A-z_-]+)$ api/index.php [QSA,L,NC]
